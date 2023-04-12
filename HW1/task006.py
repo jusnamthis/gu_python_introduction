@@ -3,9 +3,7 @@
 
 def check_if_ticket_is_lucky(ticket):
     first_half_sum = get_first_half_sum(ticket)
-    print(first_half_sum)
     second_half_sum = get_second_half_sum(ticket)
-    print(second_half_sum)
     return first_half_sum == second_half_sum
 
 
