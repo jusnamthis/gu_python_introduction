@@ -5,9 +5,7 @@ def check_break_off_possibility(rows, columns, desired_size):
     if desired_size < rows and desired_size < columns:
         return False
     horizontal = check_horizontal_break_off_possibility(rows, columns, desired_size)
-    print(horizontal)
     vertical = check_horizontal_break_off_possibility(columns, rows, desired_size)
-    print(vertical)
     return horizontal or vertical
 
 
