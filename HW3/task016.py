@@ -9,8 +9,8 @@ def generate_numbers():
     return numbers
 
 
-def get_number_to_count():
-    return int(input('Enter number to count: '))
+def get_number_to_count(msg):
+    return int(input(msg))
 
 
 def count_number_in_list(numbers, number):
@@ -24,7 +24,7 @@ def count_number_in_list(numbers, number):
 def get_numbers_and_count_n_entries():
     numbers = generate_numbers()
     print(numbers)
-    number_to_count = get_number_to_count()
+    number_to_count = get_number_to_count('Enter number to count: ')
     entries = count_number_in_list(numbers, number_to_count)
     return entries
 
