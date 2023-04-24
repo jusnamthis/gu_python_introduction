@@ -14,13 +14,9 @@ def get_elems_by_user(set_len):
     return user_elems
 
 
-def get_unique_elems(arr1, arr2):
-    return sorted(set(arr1 + arr2))
-
-
 if __name__ == "__main__":
     arrs_len = get_arrays_length_by_user()
-    arr1 = get_elems_by_user(arrs_len[0])
-    arr2 = get_elems_by_user(arrs_len[1])
-    print(get_unique_elems(arr1, arr2))
+    set_m = set(get_elems_by_user(arrs_len[0]))
+    set_n = set(get_elems_by_user(arrs_len[1]))
+    print(sorted([set_m.intersection(set_n)]))
     
